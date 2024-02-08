@@ -1,0 +1,133 @@
+<h1>All Trips</h1>
+<div class="allFilter">
+  <mat-form-field class="filter">
+    <mat-label>Filter by date</mat-label>
+    <mat-select class="select" (selectionChange)="filterDate($event)">
+      <mat-option  [value]="1">
+        future trips
+      </mat-option>
+      <mat-option  [value]="2">
+        trips that took place
+      </mat-option>
+
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field class="filter">
+    <mat-label>Filter by trip type</mat-label>
+    <mat-select class="select" (selectionChange)="filterTrips($event)">
+      <mat-option *ngFor="let typeTrip of allTypeTrip" [value]="typeTrip.typeName">
+        {{ typeTrip.typeName }}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+    <mat-form-field class="filter">
+        <mat-label>Sort by price</mat-label>
+        <mat-select class="select" (selectionChange)="sortPrice($event)">
+          <mat-option [value]="1">
+            From expensive to cheap
+          </mat-option>
+          <mat-option  [value]="2">
+            From cheap to expensive  
+         </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="trip-card-wrapper">
+    <div class="trip-card" *ngFor="let item of allMyTrip">
+      <div class="card-image">
+        <img src="../../../assets/{{item.pic}}"width="100%" class="img">
+      </div>
+      <div class="card-content">
+        <p class="destination">{{ item.destinationTrip }}</p>
+        <p class="date">{{ item.dateTrip | date }}</p>
+      </div>
+      <div class="card-actions">
+        <button class="details-button" (click)="details(item.tripId)">View Details</button>
+        <!-- <br><br><br><br> -->
+        <button class="details-button" (click)="delete(item.tripId)">To cancel an order</button>
+      </div>
+    </div>
+  </div>
+  
+    <!-- <ng-container *ngIf="item.dateTrip"> -->
+        <!-- <div class="divs" style="border-color: chartreuse;" (click)="move(item.code)">{{item.goal}}
+            {{item.date}}
+            <button (click)="order(item.code)">להזמנה</button>
+        </div> -->
+        <!-- <p style="text-align: left;" class="card" >
+            <mat-toolbar (click)="details(item.tripId)">
+                color="primary"
+                <mat-toolbar-row>
+                    <span class="trip">Trip </span>
+                    <span class="example-spacer"></span>
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" >
+                        <mat-icon class="menu">menu</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+                
+                <mat-toolbar-row>
+                    <span><b>the destination of the trip:   </b>{{  item.destinationTrip}}</span><br>
+                    <mat-divider></mat-divider>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                    <span><b>the date of the trip:  </b>{{  item.dateTrip |date}}</span><br>
+                    <mat-divider></mat-divider>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                    <span class="example-spacer"></span>
+                    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                        <mat-icon class="favorite">favorite</mat-icon>
+                    </button>
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                        <mat-icon >share</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </mat-toolbar>    
+        </p>
+    </ng-container>  
+</div>
+<div> -->
+    <br><br><br>   
+      
+
+     
+
+<!-- <div *ngFor="let item of allMyTrip" > -->
+<!--  && compareDates(item.dateTrip,d1)==1 -->
+            <!-- <ng-container *ngIf="item.dateTrip" >
+                <mat-card class="example-card" style="text-align: left;" > -->
+                    <!-- [ngClass]="find(item)==0?'special':'none'" -->
+                    <!-- <mat-card-header>
+                        <div mat-card-avatar class="example-header-image" ></div>
+                        
+                        <mat-card-title>Jurney world</mat-card-title>
+                        <mat-card-subtitle>{{item.destinationTrip}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+                    <!-- <img mat-card-image src="../../../assets/{{item.img}}.png" width="100%" class="img" -->
+                        <!-- alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                           date:{{item.dateTrip|date}}
+                           <br>
+                            {{item.destinationTrip}}:goal
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions> -->
+                        <!--  (click)="move2(item.code)" -->
+                        <!-- <button mat-button>LIKE</button>
+                        <button mat-button (click)="details(item.tripId)">MORE</button>
+                    </mat-card-actions> -->
+                    <!-- <mat-card-content>
+                        <div [hidden]="!showDiv&&x!=item.code" >
+                            <p>{{item.price}}</p>
+                        </div>
+                    </mat-card-content> -->
+                <!-- </mat-card>
+
+            </ng-container>
+        </div> -->

@@ -1,0 +1,117 @@
+.trip-card-wrapper {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row; /* Change flex-wrap to flex-direction */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .trip-card {
+    width: calc(20% - 20px);
+    height: 350px;
+    margin-right: 40px;
+  }
+  
+  
+  
+  .card-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .destination {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #888888;
+  }
+  
+  .card-actions {
+    margin-top: 20px;
+  }
+  
+  .details-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .details-button:hover {
+    background-color: #45a049;
+  }
+  /* .trip-card-wrapper {
+    margin-top: 2%;
+    margin-block-end: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  } */
+  
+.trip-card-wrapper {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .trip-card {
+    width: calc(20% - 20px);
+    height: 350px;
+    margin-right: 40px;
+  }
+  .filter {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    padding-left: 10px; /* Adjust this value as needed for the desired space from the left */
+    margin-top: 2%;
+  }
+  
+  .line {
+    width: 30%;
+    height:1.5px;
+    background-color: #000000;
+    margin:17px 0;
+    margin-left:33%;
+  }
+  h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2%;
+    margin-left: 45%;
+  }
+ .allFilter{
+    margin-left: 100px;
+ }
+  .img{
+    height: 170px;
+    width:100%;
+  }
+  .delete{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .card-actions{
+    display: inline-block;
+
+  }

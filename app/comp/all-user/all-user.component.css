@@ -1,0 +1,32 @@
+.container {
+    margin-top: 3rem;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle; /* Align content in the middle */
+    border-top: 1px solid #dee2e6;
+}
+.table thead th {
+    vertical-align: middle; /* Align content in the middle */
+    border-bottom: 2px solid #05ef24;
+    /* margin-inline-end: 220px; */
+}
+.table tbody + tbody {
+    border-top: 2px solid #05ef24;
+}
+.table .table {
+    background-color: #fff;
+}
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+.td{
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+  <div class="trip-details">
+    <div class="trip-info">
+      <div class="destination">{{trip.destinationTrip}}</div>
+      <div class="date">the date of the trip {{ trip.dateTrip|date}}</div>
+      <div class="type">type of trip: {{ trip.typeId}}</div>
+      <div class="time">leaving time: {{ trip.timeGoing}}</div>
+      <div class="duration">the duration of the trip: {{ trip.durationTrip}}</div>
+      <div class="price">the price of the trip: {{ trip.price}}</div>
+      <div class="places">Number of places available: {{ trip.freePlace}}</div>
+    </div>
+    <img src="../../../assets/{{trip.pic}}"width="100%" class="trip-image">
+  </div>
+  <button class="order-button" (click)="open()" [hidden]="!toOrder2">to order</button>
+  <div class="order-form" [hidden]="!toOrder">
+    <form (ngSubmit)="save()" #formP="ngForm">
+      <div class="form-group">
+        <label for="id">Number of places to book:</label>
+        <div class="input-group">
+          <input type="number" class="form-control" id="id" placeholder="Enter a number of places to order" name="id" [(ngModel)]="place">
+          <div class="input-group-append">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">to order</button>
+    </form>
+  </div>
+</mat-card>
+

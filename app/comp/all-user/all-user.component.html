@@ -1,0 +1,25 @@
+
+  <div class="container mt-3">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name </th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>First aid certificate </th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+                <td class="td">{{user.userFirstName}}</td>
+                <td class="td">{{user.userLastName}}</td>
+                <td class="td">{{user.userPhone}}</td>
+                <td  class="td">{{user.userEmail}}</td>
+                <td class="td">{{user.userPassword}}</td>
+                <td class="td">{{user.firstAidCertificate}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

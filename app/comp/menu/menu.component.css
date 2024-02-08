@@ -1,0 +1,145 @@
+/* .logo{
+    /* height: 100px; */
+    /* margin-top: 0px; */
+    /* margin-left: 0; */
+    /* width: 100000px; */
+/* } */
+/* @import "~bootstrap/dist/css/bootstrap.css";
+
+.home{
+    padding-left: 12rem;
+    margin-top: 3rem;
+}
+#homePage1{
+    width: 100%;
+    /* margin-top: 20px; */
+    /* height: 15%; */
+   /* margin-left: -2rem;
+}
+#homePage2{
+    width: 90%;
+    margin-top: 60px;
+    margin-right:290px ; 
+}
+.details{
+    margin-top: 7rem;
+}
+.comment{
+    margin-top: 7rem;
+    text-align: center;
+}
+.bco{
+    background-color: #2f0fe7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.level{  */
+    /* float: right; */
+    /* height: 3rem;
+    padding: 2.5rem; */
+    /* margin-top:200px ; */
+    /* background-color: black; */
+    /* margin: 15rem; */
+/* }
+.link{
+    margin: 8%; */
+    /* color: #4CAF50; */
+
+/* }
+.topnav{
+    height: 30px;
+    background-color: #2d0bed;
+    color: white;
+    font-family: sans-serif;
+} */
+
+/* 
+.navbar {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e7e7e5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .navbar a.active {
+    color: #ffffff;
+    background-color:#b6e3cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .navbar a:hover {
+    color:#fafafa;
+
+  }
+  .currentUser{
+    justify-content: end;
+  } */
+
+
+  .navbar {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 10px;
+  }
+  
+  .nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav:hover {
+    background-color: #ddd;
+  }
+  
+  .currentUser {
+    color: black;
+    font-weight: bold;
+  }
+  .menu{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    flood-color: black;
+    /* background-color: black; */
+  }
+  
+  /* .private-area {
+    background-color: #f9f9f9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .private-area:hover {
+    background-color: #ddd;
+  }
+   */

@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div>
+    <a routerLink="/Home" class="nav">Home</a>
+    <a routerLink="/Register" class="nav" *ngIf="!manager.userEmail">Register</a>
+    <a routerLink="/Login" class="nav" *ngIf="!manager.userEmail">Login</a>
+    <a routerLink="/Trips" class="nav">Trips</a>
+    <!-- <a routerLink="/Profile" class="nav">private area</a> -->
+    <button mat-button [matMenuTriggerFor]="menu" class="nav"  *ngIf="currentUser.userFirstName">Private area</button>
+<mat-menu #menu="matMenu">
+  <!-- <a routerLink="/Register"class="menu" mat-menu-item ></a> -->
+  <a routerLink="/Register"   mat-menu-item  class="menu">User edit</a>
+  <a routerLink="/Profile"   mat-menu-item  class="menu">All my trips</a>
+</mat-menu>
+    <a routerLink="/allUsers" class="nav" *ngIf="manager.userEmail">our users</a>
+    <a class="currentUser" *ngIf="manager.userEmail">Manager</a>
+    <a class="currentUser" *ngIf="currentUser">{{currentUser.userFirstName}}</a>
+  </div>
+</nav>
+

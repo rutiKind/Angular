@@ -1,0 +1,68 @@
+<h2>All trips</h2>
+<div class="line"></div>
+<mat-form-field class="filter">
+    <mat-label>Filter by trip type</mat-label>
+    <mat-select class="select" (selectionChange)="filterTrips($event)">
+      <mat-option *ngFor="let typeTrip of allTypeTrip" [value]="typeTrip.typeName">
+        {{ typeTrip.typeName }}
+      </mat-option>
+    </mat-select>
+
+  </mat-form-field>  
+<div class="trip-card-wrapper">
+    <div class="trip-card" *ngFor="let item of allTrips">
+      <div class="card-image">
+        <img src="../../../assets/{{item.pic}}"width="100%" class="img">
+      </div>
+      <div class="card-content">
+        <p class="destination">{{ item.destinationTrip }}</p>
+        <p class="date">{{ item.dateTrip | date }}</p>
+      </div>
+      <div class="card-actions">
+        <button class="details-button" (click)="details(item.tripId)">View Details</button>
+      </div>
+    </div>
+  </div>
+  
+    <!-- <ng-container *ngIf="item.dateTrip"> -->
+        <!-- <div class="divs" style="border-color: chartreuse;" (click)="move(item.code)">{{item.goal}}
+            {{item.date}}
+            <button (click)="order(item.code)">להזמנה</button>
+        </div> -->
+        <!-- <p style="text-align: left;" class="card" >
+            <mat-toolbar (click)="details(item.tripId)">
+                color="primary"
+                <mat-toolbar-row>
+                    <span class="trip">Trip </span>
+                    <span class="example-spacer"></span>
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" >
+                        <mat-icon class="menu">menu</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+                
+                <mat-toolbar-row>
+                    <span><b>the destination of the trip:   </b>{{  item.destinationTrip}}</span><br>
+                    <mat-divider></mat-divider>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                    <span><b>the date of the trip:  </b>{{  item.dateTrip |date}}</span><br>
+                    <mat-divider></mat-divider>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                    <span class="example-spacer"></span>
+                    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                        <mat-icon class="favorite">favorite</mat-icon>
+                    </button>
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                        <mat-icon >share</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </mat-toolbar>    
+        </p>
+    </ng-container>  
+</div>
+<div> -->
+    <br><br><br>   
+      
+
+     
